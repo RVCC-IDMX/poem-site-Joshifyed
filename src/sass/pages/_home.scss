@@ -1,16 +1,44 @@
-/* home */
-@use "../abstracts/variables" as var;
-@use "../base/typography" as type;
-
 body {
-  font-family: type.$font;
-  background-color: var.$bg-very-light;
-  width: min(100% - 2rem, 60ch);
-  margin-inline: auto;
-  margin-block: 4rem;
+  padding-top: 2rem;
+  background-color: white;
+  background: linear-gradient(to right, #f12711, #f5af19);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
 }
 
-h1 {
-  color: var.$primary-color;
-  text-align: center;
+.container,
+footer {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.poem {
+  font-size: clamp(1rem, 0.619rem + 1.9048vw, 3rem);
+}
+
+img {
+  border-radius:3px;
+  max-height: 50vh;
+}
+
+h2 {
+  font-size: clamp(1rem, 0.619rem + 1.9048vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(0.8rem, 0.6667rem + 0.6667vw, 1.5rem);
+}
+
+footer {
+  gap: 0.5rem;
+  padding: 2rem 0;
+}
+
+a,
+a:visited {
+color: inherit;
 }
